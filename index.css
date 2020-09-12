@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+}
+#heading {
+  text-align: center;
+  padding: 35px;
+}
+.login-signup-content {
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-container {
+  height: 45px;
+  text-align: center;
+
+}
+.signup-container {
+  height: 15px;
+  text-align: center;
+}
+.login-signup-content button {
+  width: 100px;
+}
+#login-form {
+  display: flex;
+  padding:35px;
+  flex-direction: column;
+  align-items: center;
+}
+.login-username, .login-password {
+  padding: 20px;
+}
+.login-submit-button {
+  margin-top: 35px;
+}
+.login-form-container {
+  display: none;
+}
+#signup-form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+}
+#signup-form label {
+  margin-top: 25px;
+}
+.signup-submit-button {
+  margin-top: 25px;
+}
