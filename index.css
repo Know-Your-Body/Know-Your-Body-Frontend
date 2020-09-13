@@ -120,7 +120,7 @@ border-right: 0px;
   box-shadow: 0px 5px 20px 0px;
   height: 300px;
   width: 370px;
-  display: none;
+  /*display: none;*/
   align-items: center;
   flex-direction: column;
 }
@@ -206,6 +206,10 @@ border-right: 0px;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+#db_input_message {
+  color: red;
 }
 .normal-sugar-level {
   height: 400px;

@@ -7,13 +7,16 @@
     <header>
       <h1 id="heading">Know Your Blood Sugar level!</h1>
     </header>
-    <div class="calculate-db">
-      <label class="db-fasting">Blood Sugar Level (fasting) <input type="number" min="1" max="1000" placeholder="in mg/dL" required></input></label>
-      <button type="submit" class="bmi-submit-button">Know your result!</button>
+    <div class="calculate-db" id="calculate_db">
+      <label class="db-fasting">Blood Sugar Level (fasting)</label>
+      <input type="number" id="db_fasting" min="1" max="1000" placeholder="in mg/dL" required></input>
+      <p id="db_input_message"></p>
+      <button type="submit" class="bmi-submit-button" onclick="Blood_Sugar_Level();">Know your result!</button>
     </div>
-    <div class="db-display">
+
+    <div class="db-display" id="db_display">
       <h2 class="db-value">Hey username! Your Blood Sugar Level is X.</h2>
-      <div class="pre-diabetic">
+      <div class="pre-diabetic" id="pre_diabetic">
         <h3>That means you are <b>PRE-DIABETIC.</b></h3>
         <p>Here are the few things you can try-</p>
         <p> Exercise! Exercise! Exercise!</p>
@@ -24,13 +27,13 @@
         <p>Drink green tea daily. It will help you in long run.</p>
         <h4>Source: <a href="https://www.webmd.com/">webmd.com</a></h4>
       </div>
-      <div class="normal-sugar-level">
+      <div class="normal-sugar-level" id="normal_sugar_level">
         <h3>Congratulations! You are as <b>HEALTHY</b> as your smile.</h3>
         <p>Keep following the same eating and exercise routine to stay on the track.</p>
         <p>Although your blood sugar level is good but keep an eye on it so that you stay fit forever.</p>
         <h4>Source: <a href="https://www.webmd.com/">webmd.com</a></h4>
       </div>
-      <div class="diabetic">
+      <div class="diabetic" id="diabetic">
         <h3>That means you are <b>DIABETIC.</b></h3>
         <p>Here are the few things you can try-</p>
         <p>Avoid sugar.</p>
@@ -44,5 +47,6 @@
         <h4>Source: <a href="https://www.webmd.com/">webmd.com</a></h4>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
