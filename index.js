@@ -7,7 +7,6 @@ function show_signup_form(){
     document.getElementById('signup-form').style.display = "block";
     document.getElementById('login_form').style.display = "none";
   	}
- 
 
 // bmi.html
 (function() {
@@ -46,3 +45,28 @@ function Body_Mass_Index() {
       	document.getElementById("overweight").style.display = "none";
     }
 }
+
+// db.html
+function Blood_Sugar_Level(){
+	let db_fasting_value = document.getElementById("db_fasting").value;
+
+	if (db_fasting_value < 70) {
+		document.getElementById("db_input_message").innerHTML = 'Too low or invalid value.'
+		return
+	}
+    document.getElementById("calculate_db").style.display = "none";
+    document.getElementById("db_display").style.display = "flex";
+
+
+    if (db_fasting_value >= 100 && db_fasting_value <= 125){
+      document.getElementById("normal_sugar_level").style.display = "none";
+      document.getElementById("diabetic").style.display = "none";
+    }else if (db_fasting_value >= 70 && db_fasting_value <= 99){
+      document.getElementById("pre_diabetic").style.display = "none";
+      document.getElementById("diabetic").style.display = "none";
+    }else if (db_fasting_value >= 126){
+      document.getElementById("pre_diabetic").style.display = "none";
+      document.getElementById("normal_sugar_level").style.display = "none";
+	}
+}
+

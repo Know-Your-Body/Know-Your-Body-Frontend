@@ -184,6 +184,9 @@ border-right: 0px;
   color: white;
   font-size: 32px;
 }
+#db_input_message {
+  color: red;
+}
 .pre-diabetic, .normal-sugar-level, .diabetic {
   height: 400px;
   width:400px;
