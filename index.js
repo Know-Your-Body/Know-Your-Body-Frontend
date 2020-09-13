@@ -1,12 +1,12 @@
 // hb.html
 function Hemoglobin(){
 	document.getElementById("calculate_Hb").style.display = "none";
-	document.getElementById("hb_display").style.display = "block"
+	document.getElementById("hb_display").style.display = "flex"
 
 	let hemoglobin = document.getElementById("hemoglobin").value;
 	document.getElementById("hemoglobin_level").innerHTML = hemoglobin;
 
-	if (document.getElementById("male").checked == true){  
+	if (document.getElementById("male").checked == true){
 	  document.getElementById("gender").innerHTML="male";
 
 	  if (hemoglobin < 13.5){
