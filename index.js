@@ -40,6 +40,7 @@ function Hemoglobin(){
 	}
 }
 
+// index.html
 function show_login_form(){
     document.getElementById('login-form').style.display = "block";
     document.getElementById('signup-form').style.display = "none";
@@ -111,3 +112,4 @@ function Body_Mass_Index() {
       	document.getElementById("overweight").style.display = "none";
     }
 }
+
