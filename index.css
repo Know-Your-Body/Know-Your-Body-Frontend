@@ -139,15 +139,27 @@ border-right: 0px;
 .bmi-display {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .bmi-value {
   text-align: center;
   color: white;
   font-size: 32px;
 }
-.underweight, .normal, .overweight, .obese {
+.underweight, .overweight, .obese {
+  height: 700px;
+  width: 600px;
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.normal {
   height: 400px;
-  width:400px;
+  width: 400px;
   background-color: #48cae4;
   margin: 50px;
   box-shadow: 0px 5px 20px 0px;
@@ -165,7 +177,7 @@ border-right: 0px;
   box-shadow: 0px 5px 20px 0px;
   height: 300px;
   width: 500px;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
 }
@@ -174,7 +186,7 @@ border-right: 0px;
 }
 
 .db-display {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -184,9 +196,20 @@ border-right: 0px;
   color: white;
   font-size: 32px;
 }
-.pre-diabetic, .normal-sugar-level, .diabetic {
+.pre-diabetic, .diabetic {
+  height: 700px;
+  width:600px;
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.normal-sugar-level {
   height: 400px;
-  width:400px;
+  width: 400px;
   background-color: #48cae4;
   margin: 50px;
   box-shadow: 0px 5px 20px 0px;
@@ -222,14 +245,29 @@ align-items: center;
 .hb {
   padding-top: 30px;
 }
-.anemia, .normal-hemoglobin-level, .high-hemoglobin {
+.anemia, .high-hemoglobin {
   background-color: #48cae4;
   margin: 50px;
   box-shadow: 0px 5px 20px 0px;
   height: 500px;
   width: 400px;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.normal-hemoglobin-level {
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  height: 400px;
+  width: 400px;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+.gender {
+  display: flex;
+  flex-direction: row;
 }
