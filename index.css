@@ -177,7 +177,7 @@ border-right: 0px;
   box-shadow: 0px 5px 20px 0px;
   height: 300px;
   width: 500px;
-  display: none;
+  display: flex;
   align-items: center;
   flex-direction: column;
 }
@@ -186,7 +186,7 @@ border-right: 0px;
 }
 
 .db-display {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -229,7 +229,7 @@ border-right: 0px;
   background-color: #48cae4;
   margin: 50px;
   box-shadow: 0px 5px 20px 0px;
-  height: 300px;
+  height: 350px;
   width: 450px;
   display: flex;
   align-items: center;
@@ -248,6 +248,7 @@ align-items: center;
 }
 .hb {
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 .anemia, .high-hemoglobin {
   background-color: #48cae4;
