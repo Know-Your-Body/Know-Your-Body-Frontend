@@ -1,11 +1,54 @@
+// hb.html
+function Hemoglobin(){
+	document.getElementById("calculate_Hb").style.display = "none";
+	document.getElementById("hb_display").style.display = "flex"
+
+	let hemoglobin = document.getElementById("hemoglobin").value;
+	document.getElementById("hemoglobin_level").innerHTML = hemoglobin;
+
+	if (document.getElementById("male").checked == true){
+	  document.getElementById("gender").innerHTML="male";
+
+	  if (hemoglobin < 13.5){
+	    document.getElementById("normal_hemoglobin_level").style.display = "none";
+	    document.getElementById("high_hemoglobin").style.display = "none";
+
+	  }else if (hemoglobin >= 13.5 && hemoglobin <= 17.5){
+	    document.getElementById("anemia").style.display = "none";
+	    document.getElementById("high_hemoglobin").style.display = "none";
+
+	  }else if (hemoglobin > 17.5){
+	    document.getElementById("anemia").style.display = "none";
+	    document.getElementById("normal_hemoglobin_level").style.display = "none";
+	  }
+
+	}else if (document.getElementById("female").checked == true) {
+	  document.getElementById("gender").innerHTML="female";
+
+	  if (hemoglobin < 12){
+	    document.getElementById("normal_hemoglobin_level").style.display = "none";
+	    document.getElementById("high_hemoglobin").style.display = "none";
+
+	  }else if (hemoglobin >= 12 && hemoglobin <= 15.5){
+	    document.getElementById("anemia").style.display = "none";
+	    document.getElementById("high_hemoglobin").style.display = "none";
+
+	  }else if (hemoglobin > 15.5){
+	    document.getElementById("anemia").style.display = "none";
+	    document.getElementById("normal_hemoglobin_level").style.display = "none";
+	  }
+	}
+}
+
+// index.html
 function show_login_form(){
-    document.getElementById('login_form').style.display = "block";
+    document.getElementById('login-form').style.display = "block";
     document.getElementById('signup-form').style.display = "none";
   	}
 
 function show_signup_form(){
     document.getElementById('signup-form').style.display = "block";
-    document.getElementById('login_form').style.display = "none";
+    document.getElementById('login-form').style.display = "none";
   	}
 
 // db.html
@@ -69,3 +112,4 @@ function Body_Mass_Index() {
       	document.getElementById("overweight").style.display = "none";
     }
 }
+
