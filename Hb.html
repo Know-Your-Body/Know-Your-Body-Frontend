@@ -7,31 +7,38 @@
     <header>
       <h1 id="heading">Know Your Hemoglobin level</h1>
     </header>
-    <div class="calculate-Hb">
+    <div class="calculate-Hb" id="calculate_Hb">
       <h3>Gender</h3>
-      <label for="male"><input type="radio" value="male">Male</input></label><br>
+      <!-- <label for="male"><input type="radio" value="male">Male</input></label><br>
       <label for="female"><input type="radio" value="female">Female</input></label><br>
 
-      <label class="hb">Hemoglobin Level <input type="number" min="1" max="35" placeholder="in gm/dl" required></input></label>
-      <button type="submit" class="bmi-submit-button">Know your result!</button>
+      <label class="hb">Hemoglobin Level <input type="number" min="1" max="35" placeholder="in gm/dl" required></input></label> -->
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <label class="hb">Hemoglobin Level</label>
+      <input type="number" id="hemoglobin" min="1" max="35" placeholder="in gm/dl" required>
+      <button type="submit" class="bmi-submit-button" onclick="Hemoglobin();">Know your result!</button>
     </div>
-    <div class="hb-display">
-      <h2 class="hb-value">Hey username, you are a X! Your Hemoglobin Level is Y.</h2>
-      <div class="anemia">
+    <div class="hb-display" id="hb_display">
+      <h2 class="hb-value">Hey username, you are a <span id="gender">X</span>! Your Hemoglobin Level is <span id="hemoglobin_level">Y</span>.</h2>
+      <div class="anemia" id="anemia">
         <h3>That means you are <b>Anemic</b></h3>
         <p>Here are the few things you can try-</p>
         <p> </p>
       </div>
-      <div class="normal-hemoglobin-level">
+      <div class="normal-hemoglobin-level" id="normal_hemoglobin_level">
         <h3>Congratulations! You are as <b>HEALTHY</b> as your smile.</h3>
         <p>Keep following the same eating and exercise routine to stay on the track.</p>
         <p> </p>
       </div>
-      <div class="high-hemoglobin">
+      <div class="high-hemoglobin" id="high_hemoglobin">
         <h3>That means your hemoglobin level is <b>HIGHER</b> than normal.</h3>
         <p>Here are the few things you can try-</p>
         <p> </p>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
