@@ -9,13 +9,13 @@
     </header>
     <div class="login-signup-content">
       <div class="login-container">
-        <button>Login</button>
+        <button onclick="show_login_form();">Login</button>
       </div>
       <div class="signup-container">
-        <button>Sign up</button>
+        <button onclick="show_signup_form();">Sign up</button>
       </div>
     </div>
-    <div class="login-form-container" id="login_form">
+    <div class="login-form-container" id="login-form-container">
       <form id="login-form">
         <label class="login-username">Username <input type="text" required></input></label>
         <label class="login-password">Password <input type="password" required></input></label>
@@ -23,7 +23,7 @@
         <p>Not a member? <span style="cursor: pointer;" onclick="show_signup_form();"><u>sign up</u></span></p>
       </form>
     </div>
-    <div class="signup-form-container">
+    <div class="signup-form-container" id="signup-form-container">
       <form id="signup-form">
         <div><label class="signup-username">Username </label><input type="text" required></input></div>
         <div><label class="signup-password" >Password </label><input type="password" min="8" required></input></div>
