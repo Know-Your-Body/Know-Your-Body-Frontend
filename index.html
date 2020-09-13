@@ -8,10 +8,14 @@
       <h1 id="heading">Know Your Body!</h1>
     </header>
     <div class="login-signup-content">
-      <div class="login-container"><button>Login</button></div>
-      <div class="signup-container"><button>Sign up</button></div>
+      <div class="login-container" onclick="show_login_form();">
+        <button>Login</button>
+      </div>
+      <div class="signup-container">
+        <button onclick="show_signup_form();">Sign up</button>
+      </div>
     </div>
-    <div class="login-form-container">
+    <div class="login-form-container" id="login_form">
       <form id="login-form">
         <label class="login-username">Username <input type="text" required></input></label>
         <label class="login-password">Password <input type="password" required></input></label>
@@ -27,5 +31,19 @@
         <button type="submit" class="signup-submit-button">Submit</button>
       </form>
     </div>
+
+
+    <script>
+      function show_login_form(){
+        document.getElementById('login_form').style.display = "block";
+        document.getElementById('signup-form').style.display = "none";
+      }
+
+      function show_signup_form(){
+        document.getElementById('signup-form').style.display = "block";
+        document.getElementById('login_form').style.display = "none";
+      }
+      
+    </script>
   </body>
 </html>
