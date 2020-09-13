@@ -20,10 +20,10 @@
     </div>
     <div class="signup-form-container">
       <form id="signup-form">
-        <label class="signup-username">Username <input type="text" required></input></label>
-        <label class="signup-password">Password <input type="password" required></input></label>
-        <label class="signup-verify-password">Verify password <input type="password" required></input></label>
-        <label class="signup-age">Age<input type="number" min="1" max="120" required></input></label>
+        <div><label class="signup-username">Username </label><input type="text" required></input></div>
+        <div><label class="signup-password" >Password </label><input type="password" min="8" required></input></div>
+        <div><label class="signup-verify-password" >Verify password </label><input type="password" min="8" required></input></div>
+        <div><label class="signup-age">Age </label><input class="age-input" type="number" min="1" max="120" required></input></div>
         <button type="submit" class="signup-submit-button">Submit</button>
       </form>
     </div>

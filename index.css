@@ -1,51 +1,235 @@
 body {
   font-family: sans-serif;
-}
-#heading {
-  text-align: center;
-  padding: 35px;
-}
-.login-signup-content {
-  display: block;
-  justify-content: center;
+  background-color: #023e8a;
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
-.login-container {
-  height: 45px;
-  text-align: center;
+#heading {
+  #text-align: center;
+  padding: 45px;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 33.5px;
+}
 
+/* login and signup css*/
+
+.login-signup-content {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #48cae4;
+  #margin-bottom: 200px;
+  width: 500px;
+  #height: 500px;
+  box-shadow:0px 5px 20px 0px;
+}
+.login-container {
+  text-align: center;
+  margin-top: 50px;
 }
 .signup-container {
-  height: 15px;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .login-signup-content button {
-  width: 100px;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
 }
 #login-form {
   display: flex;
   padding:35px;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0px;
 }
 .login-username, .login-password {
   padding: 20px;
 }
 .login-submit-button {
   margin-top: 35px;
+  margin-bottom: 25px;
 }
 .login-form-container {
   display: none;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #48cae4;
+  #margin-bottom: 200px;
+  width: 500px;
+  #height: 500px;
+  box-shadow:0px 5px 20px 0px;
+}
+.signup-form-container {
+  display: block;
+  align-items: : center;
+  flex-direction: column;
+  background-color: #48cae4;
+  #margin-bottom: 200px;
+  width: 500px;
+  #height: 500px;
+  box-shadow: 0px 5px 20px 0px;
 }
 #signup-form {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 35px;
+  padding-top: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 35px;
+  margin-bottom: 0px;
 }
 #signup-form label {
-  margin-top: 25px;
+  #margin-top: 25px;
+  display: inline-block;
+  width: 140px;
+  padding: 20px;
 }
 .signup-submit-button {
   margin-top: 25px;
+  #margin-bottom: 10px;
+}
+.age-input {
+ border-left: 0px;
+border-right: 0px;
+}
+.know-your-body {
+  display: flex;
+  flex-direction: row;
+}
+.know-your-bmi, .know-your-db, .know-your-hb {
+  height: 220px;
+  width:225px;
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/*bmi css starts here*/
+
+.calculate-bmi {
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  height: 300px;
+  width: 370px;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+.height, .weight {
+  text-align: center;
+  padding-top: 30px;
+  #padding-bottom: 20px;
+}
+.bmi-submit-button {
+  #display: flex;
+  #justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+  width: 250px;
+}
+.bmi-display {
+  display: flex;
+  flex-direction: column;
+}
+.bmi-value {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+.underweight, .normal, .overweight, .obese {
+  height: 400px;
+  width:400px;
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*db css starts here*/
+
+.calculate-db {
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  height: 300px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.db-fasting {
+  padding: 30px;
+}
+
+.db-display {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.db-value {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+.pre-diabetic, .normal-sugar-level, .diabetic {
+  height: 400px;
+  width:400px;
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*Hb css starts here*/
+
+.calculate-Hb {
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  height: 300px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hb-display {
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.hb-value {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+.hb {
+  padding-top: 30px;
+}
+.anemia, .normal-hemoglobin-level, .high-hemoglobin {
+  background-color: #48cae4;
+  margin: 50px;
+  box-shadow: 0px 5px 20px 0px;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
