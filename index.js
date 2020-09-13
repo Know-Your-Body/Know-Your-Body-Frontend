@@ -1,3 +1,16 @@
+// index.html
+function show_login_form(){
+    document.getElementById('login-form-container').style.display = "flex";
+	document.getElementById('signup-form-container').style.display = "none";
+	document.getElementsByClassName('login-signup-content')[0].style.display = "none";
+  	}
+
+function show_signup_form(){
+    document.getElementById('signup-form-container').style.display = "flex";
+    document.getElementById('login-form-container').style.display = "none";
+	document.getElementsByClassName('login-signup-content')[0].style.display = "none";
+  	}
+
 // hb.html
 function Hemoglobin(){
 	document.getElementById("calculate_Hb").style.display = "none";
@@ -40,17 +53,6 @@ function Hemoglobin(){
 	}
 }
 
-// index.html
-function show_login_form(){
-    document.getElementById('login-form').style.display = "block";
-    document.getElementById('signup-form').style.display = "none";
-  	}
-
-function show_signup_form(){
-    document.getElementById('signup-form').style.display = "block";
-    document.getElementById('login-form').style.display = "none";
-  	}
-
 // db.html
 function Blood_Sugar_Level(){
 	let db_fasting_value = document.getElementById("db_fasting").value;
@@ -78,7 +80,6 @@ function Blood_Sugar_Level(){
 // bmi.html
 (function() {
     document.getElementById("bmi-result").style.display = "none";
-
 })();
 
 function Body_Mass_Index() {
