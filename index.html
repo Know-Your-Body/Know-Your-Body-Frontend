@@ -8,18 +8,19 @@
       <h1 id="heading">Know Your Body!</h1>
     </header>
     <div class="login-signup-content">
-      <div class="login-container" onclick="show_login_form();">
+      <div class="login-container">
         <button>Login</button>
       </div>
       <div class="signup-container">
-        <button onclick="show_signup_form();">Sign up</button>
+        <button>Sign up</button>
       </div>
     </div>
     <div class="login-form-container" id="login_form">
       <form id="login-form">
         <label class="login-username">Username <input type="text" required></input></label>
         <label class="login-password">Password <input type="password" required></input></label>
-        <button type="submit" class="login-submit-button">Submit</button>
+        <button type="submit" class="login-submit-button">Login</button>
+        <p>Not a member? <span style="cursor: pointer;" onclick="show_signup_form();"><u>sign up</u></span></p>
       </form>
     </div>
     <div class="signup-form-container">
@@ -28,7 +29,9 @@
         <div><label class="signup-password" >Password </label><input type="password" min="8" required></input></div>
         <div><label class="signup-verify-password" >Verify password </label><input type="password" min="8" required></input></div>
         <div><label class="signup-age">Age </label><input class="age-input" type="number" min="1" max="120" required></input></div>
-        <button type="submit" class="signup-submit-button">Submit</button>
+        <button type="submit" class="signup-submit-button">Sign up</button>
+
+        <p>Already register? <span style="cursor: pointer;"onclick="show_login_form();"><u>sign in</u></span></p>
       </form>
     </div>
     <script src="index.js"></script>
