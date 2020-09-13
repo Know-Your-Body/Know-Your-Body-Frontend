@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Know Your Hemoglobin level</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="heading">Know Your Hemoglobin level</h1>
+    </header>
+    <div class="calculate-Hb">
+      <h3>Gender</h3>
+      <label for="male"><input type="radio" value="male">Male</input></label><br>
+      <label for="female"><input type="radio" value="female">Female</input></label><br>
+
+      <label class="hb">Blood Sugar Level (fasting) <input type="number" min="1" max="1000" placeholder="in mg/dL" required></input></label>
+      <button type="submit" class="bmi-submit-button">Know your result!</button>
+    </div>
+    <div class="hb-display">
+      <h2 class="hb-value">Hey username!Your Blood Hemoglobin Level is X.</h2>
+      <div class="anemia">
+        <h3>That means you are <b>PRE-DIABETIC</b></h3>
+        <p>Here are the few things you can try-</p>
+        <p> </p>
+      </div>
+      <div class="normal-hemoglobin-level">
+        <h3>Congratulations! You are as <b>HEALTHY</b> as your smile.</h3>
+        <p>Keep following the same eating and exercise routine to stay on the track.</p>
+        <p> </p>
+      </div>
+      <div class="high-hemoglobin">
+        <h3>That means your hemoglobin level is <b>HIGHER</b> than normal.</h3>
+        <p>Here are the few things you can try-</p>
+        <p> </p>
+      </div>
+    </div>
+  </body>
+</html>
